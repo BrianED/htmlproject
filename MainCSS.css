@@ -1,0 +1,427 @@
+/*************************************************************GRID LAYOUT FOR ENTIRE PAGE******************************* */
+* {
+    box-sizing: border-box;
+}
+BODY {
+	margin: 0;
+}
+#Main-Grid {
+	width: 100%;
+	min-height: 100vh;
+}
+.Header {
+	width: 100%;
+	clear: both;
+	background-color: rgb(50, 50, 50);
+	height: 3%;
+	padding: 3px;
+	position: fixed;
+	opacity: 0.6;
+	z-index: 1;
+}
+.Header:Hover {
+	opacity: 1;
+	color: white;
+}
+.Left-Panel {
+	width: 3.3333%;
+	float: left;
+	height: 150VH;
+}
+.Right-Panel {
+	width: 3.33333%;
+	float: right;
+	height: 150VH;
+}
+.Main-Body {
+	width: 93.33333%;
+	background-color: rgb(22, 96, 195);
+	margin-left: 3.3333%;
+	height: 90%;
+	overflow: visible;
+	/* background: url('fresh-grass.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover; */
+
+}
+.Footer {
+	width: 100%;
+	background-color: rgb(0, 0, 0);
+	height: 5%;
+}
+#Body-Grid {
+	height: 150vh;
+}
+.Main-Left-Panel {
+	float: left;
+	/* background-color: white; */
+	height: 100%;
+	width: 10%;
+}
+.Main-Right-Panel {
+	float: right;
+	/* background-color: white; */
+	width: 10%;
+	height: 100%;
+}
+.Main-Main-Body {
+	margin-left: 10%;
+	background-color: lightblue;
+	width: 80%;
+	height: 100%;
+}
+.Footer {
+	text-align: center;
+	color: white;
+}
+/*************************************************************END OF GRID LAYOUT FOR ENTIRE PAGE******************************* */
+
+/* *****************************************************SIDE PANEL COLOUR CHANGE************************************************** */
+@-webkit-keyframes colorCycle { 
+		0% {background-color: orange;} 
+		50% {background-color: white;} 
+		100% {background-color: green;} 
+
+}
+@-moz-keyframes colorCycle { 
+		0% {background-color: orange;} 
+		50% {background-color: white;} 
+		100% {background-color: green;} 
+}
+@keyframes colorCycle { 
+		0% {background-color: orange;}  
+		50% {background-color: white;} 
+		100% {background-color: green;} 
+}
+
+.Left-Panel, .Right-Panel { 
+	-webkit-animation: colorCycle 10s infinite alternate; 
+	-moz-animation: colorCycle 10s infinite alternate;
+	animation: colorCycle 10s infinite alternate;
+}
+/* *********************************************END OF SIDE PANEL COLOUR CHANGE********************************************* */
+
+/* *********************************************LOGIN BAR******************************************** */
+#Welcome {
+	Float: left;
+	Font-weight: italic;
+	color: white;
+}
+#Welcome:Hover {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+#login_form {
+	float: right;
+	font-weight: bold;
+	margin-right: 1%;
+}
+#Login-Box {
+	border-radius: 10%;
+	font-weight: bold;
+}
+#Login-Button {
+	font-weight: bold;
+	background-color: grey;
+	color: black;
+}
+#Login-Button:Hover {
+	background-color: white;
+	color: black;
+}
+/* *********************************************END OF LOGIN BAR******************************************** */
+
+/* **********************************************TOP BANNER ******************************************* */
+#Banner {
+	width: 100%;
+	height: 20vh;
+	padding-bottom: 0;
+}
+/* *******************************************END OF TOP BANNER ************************************** */
+
+ /* *******************************************MENU BAR************************************************* */
+  /* Set the default margin and padding in every element on the page to be 0 */
+* {
+	padding: 0;
+	margin: 0; 
+}
+NAV {
+	padding-top: 1%;
+	margin-bottom: 1%;
+	font-weight: bold;
+}
+/* Makes every LI element in the NAV tag not have any bullet points */
+NAV LI {
+	list-style: none;
+}
+/* Makes every A element in the NAV tag not have any underline points */
+NAV A {
+	text-decoration: none;
+}
+/* Declares the general style for the NAV bar*/
+NAV {
+	float: right;
+	width: 99%;
+	height: 30vh;
+	margin-right: 0.5%;
+	font-size: 20px;
+ }
+ /* Every LI tag directly after the UL tag directly after the NAV tag*/
+ NAV > UL > LI {
+	text-align: center;
+	float: left;
+	width: 16.667%; /* The % depends on how many are things displayed in the bar */
+ }
+ /* Every A tag in the LI tag directly after the NAV tag */
+ NAV > UL LI A {
+	color: white;
+	background-color: orange;
+	display: block;
+ }
+ /* Ever UL tag directly after the LI tag directly after the UL tag directly after the NAV tag */
+ NAV > UL > LI > UL {
+	opacity: 0;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+ }
+ /* Ever UL tag directly after the LI tag directly after the UL tag directly after the NAV tag */
+ NAV > UL > LI:Hover > UL {
+	opacity: 1;
+ }
+ /* Background when mouse hovers over link */
+ NAV LI UL A:Hover {
+    background: green;
+
+}
+/* Prevents the UL part of the LI tag from being accessible before the person hovers over the correct area */
+NAV LI UL {
+	width: 12.5%; /* Set this to 100% and see what happens....*/
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+    -webkit-transition: 0.3 ease;
+	-moz-transition: 0.3 ease;
+	transition: 0.3 ease;
+}
+/* Drop down section */
+NAV LI:HOVER UL {
+	display: block;
+	width: 12.5%;
+	visibility: visible;
+	opacity: 1;
+}
+NAV > UL > LI > UL LI:Hover {
+	text-align: LeftToRight;
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	transition: 1s ease;
+	overflow: visible;
+	font-size: 30px; /* This controls the text expansion */
+}
+
+NAV > UL LI A:Hover {
+	background-color: green;
+}
+/* ******************************************END OF MENU BAR********************************************** */
+
+/* ************************************SLIDESHOW******************************************** */
+#Slideshow {
+	width: 65%;
+	height: 25%;
+	margin-left: 0;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 5%;
+}
+
+figure:nth-child(1) {
+	-webkit-animation: xfade 20s 15s infinite;
+	-moz-animation: xfade 20s 15s infinite;
+   animation: xfade 20s 15s infinite;
+}
+figure:nth-child(2) {
+	-webkit-animation: xfade 20s 15s infinite;
+	-moz-animation: xfade 20s 15s infinite;
+   animation: xfade 20s 10s infinite;
+}
+figure:nth-child(3) {
+	-webkit-animation: xfade 20s 15s infinite;
+	-moz-animation: xfade 20s 15s infinite;
+   animation: xfade 20s 5s infinite;
+}
+figure:nth-child(4) {
+	-webkit-animation: xfade 20s 15s infinite;
+	-moz-animation: xfade 20s 15s infinite;
+   animation: xfade 20s 0s infinite;
+}
+
+@keyframes xfade{
+   0% {
+      opacity: 1;
+   }
+   25% {
+      opacity:1;
+   }
+   50%{
+      opacity: 0;
+   }
+   75% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
+/* ********** http://themarklee.com/2013/10/16/simple-crossfading-slideshow-css/ ******************** */
+/* ************************************END OF SLIDESHOW******************************************** */
+ 
+/* ***************************************MAIN PAGE TEXT******************************************** */
+#Main-Text H1 {
+	padding-top: 30%;
+	margin-left: 20%;
+}
+#Main-Text P {
+	float: left;
+	min-width: 40%;
+	max-width: 60%;
+	width: 55%;
+	margin-left: 5%;
+	/* text-align: */
+	font-size: 2vh;
+	line-height: 150%;
+}
+/* **********************************END OF MAIN PAGE TEXT******************************************** */
+
+/* ***********************************MAIN PAGE GALLERY********************************************** */
+.Scroll-Gallery {
+	margin-right: 5%;
+    width: 30%;
+    height: 80vh;
+    overflow: scroll;
+	float: right;
+	margin-top: -25%;
+	border: 5px groove lime;
+	background-image: url('fresh-grass.jpg');
+	overflow-x: hidden;
+} 
+#Gallery {
+	width: 80%;
+	height: 30vh;
+	margin-left: 9%;
+	border: 2px solid black;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+#ScrollBar::-webkit-scrollbar{
+	width:12px;
+	background-color: rgba(100, 100, 100, 0.4);
+	border: 1px rgba(140, 100, 100, 0.4);
+	border-radius:10px;
+}
+#ScrollBar::-webkit-scrollbar-thumb {
+	width:16px;
+	background-color: rgba(150, 150, 150, 0.6);
+	border-radius: 10px;
+	border: 1px solid rgba(150, 150, 150, 0.6);
+}
+}
+#ScrollBar::-webkit-scrollbar-thumb:hover{
+	background-color: rgba(200, 200, 200, 0.8);
+	border: 1px solid rgba(200, 200, 200, 0.8);
+	border-radius:10px;
+}
+#ScrollBar::-webkit-scrollbar-thumb:active{
+	background-color: rgba(220, 200, 170, 1);
+	border: 1px solid rgba(220, 200, 170, 1);
+	border-radius:10px;
+} 
+/* **********************************END OF MAIN PAGE GALLERY********************************************** */
+
+/* *********************************************SUBSCRIBE SECTION********************************************* */
+.Subscription {
+	float: left;
+	margin-left: 5%;
+}
+#Subscribe-Box {
+	background-color: lightgrey;
+	color: black;
+	border-radius: 10%;
+	font-weight: bold;
+}
+#Subscribe-Button {
+	background-color: lightgrey;
+	color: black;
+	font-weight: bold;
+	border-radius: 20%;
+}
+#Subscribe-Button:Hover {
+	background-color: white;	
+}
+.message {
+	float: left;
+	min-width: 40%;
+	max-width: 60%;
+	margin-left: 5%;
+	width: 55%;
+}
+
+
+/* *******************************************CATALOGUE CSS********************************************************** */
+
+
+
+table
+{
+	width:75%;
+	border: 7px solid black;
+	text-align:left;
+	background: lightblue;
+	border-collapse:collapse;
+	font-size: 18px;
+}
+
+
+td
+{
+	height:250px;
+	padding: 7px;
+	border: solid black;
+
+}
+
+div.container
+{
+	font-family: "Impact", Times, sans-serif;
+	font-size: 16px;
+	width:25%;
+	height:75%;
+	float:right;
+	margin:auto;
+	background: lightblue;
+	text-align:center;
+	margin-top: 30px;
+	position: relative;
+}
+
+div.testimonial
+{	
+	font-style: italic;
+	font-size: 20px;
+	width:100%;
+	height:100%;
+	padding:20px;
+	text-align:center;
+	background-color: rgba(255, 255, 255, 0);
+	position:absolute;
+}
+
+/* *****************************************END OF SUBSCRIBE SECTION********************************************* */
+
+
+
+
+
+

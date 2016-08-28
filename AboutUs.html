@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<HTML>
+
+	<LINK rel="stylesheet" href="AboutUsCSS.css">
+	<TITLE>About Us</TITLE>
+
+	<BODY>
+		<DIV id="Main-Grid">
+			<DIV class="Header">
+				<DIV ID="Welcome">
+					Welcome to our site! We inflate Everything, even your ego!
+				</DIV>
+				
+				<DIV id="login_options">
+					<form id="login_form">
+						Username: <input id="Login-Box" type="text" name="userName" placeholder="Username">
+						Password: <input id="Login-Box" type="text" name="userWord" placeholder="Password"> 
+						<button id="Login-Button" type="button" onclick="showError()">Login</button>
+					</form>
+			
+					<script>
+					function showError() {
+						window.alert("An error occured.\nServer is currently unavailable.")
+					}
+					</script>
+				</DIV>
+			</DIV>
+			
+			<DIV>
+				<IMG id="Banner" alt="Inflatable Everything Banner" src="../Website-Banner.jpg"></IMG>
+			</DIV>
+			
+			<DIV class="Left-Panel"></DIV>
+			<DIV class="Right-Panel"></DIV>
+			
+			<DIV class="Main-Body">
+				<DIV id="Body-Grid">
+					<DIV class="Main-Left-Panel"></DIV>
+					<DIV class="Main-Right-Panel"></DIV>
+					<DIV class="Main-Main-Body">
+						<DIV id="menu_bar">
+							<NAV>
+								<UL>
+									<LI><A id="menu_bar_dropdown" href="Default.html">Home</A></LI>
+				
+									<LI><A id="menu_bar_dropdown" href="#">Inflatables</A>
+										<UL>
+											<LI><A href="CastlePage.html">Castles</A></LI>
+											<LI><A href="SlidePage.html">Slides</A></LI>
+										</UL>
+									</LI>
+				
+									<LI><A id="menu_bar_dropdown" href="#">Water Gear</A>
+										<UL>
+											<LI><A href="BoatsPage.html">Boats</A></LI>
+											<LI><A href="JacketsPage.html">Life Jackets</A></LI>
+										</UL>
+									</LI>
+				
+									<LI><A id="menu_bar_dropdown" href="AboutUs.html">About Us</A></LI>
+				
+									<LI><A id="menu_bar_dropdown" href="FAQ.html">FAQ</A></LI>
+									
+								</UL>
+							</NAV>
+						</DIV>
+						
+						<DIV class="Image-Preview">
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../surf-inflatables.png" />
+							</FIGURE> 
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../slide-inflatables.png" />
+							</FIGURE>
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../pirate-inflatables.jpg" />
+							</FIGURE>
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../Course-inflatables.jpg" />
+							</FIGURE>
+						</DIV>
+						
+						<!-- ************************************************************************ALL OF YOUR STUFF IN SEPERATE DIVs HERE ************************************************************************************************** -->
+						<DIV>
+								<h1 id="HeadingsAlt">About Us</h1>
+								<br>
+								<h3 id="Headings">Our Back Story</h3>
+									<p id="Paras">
+										Our company has been at the forefront of all inflatable advances in recent times.
+										It all began when our founder John H Bubble was unable to find a suitable rubber castle in which he could entertain his guests.
+										Through shear frustration he introduced inflatable everything and here we are today!
+								</br>
+								<br>
+									Today we offer much more than just bouncy castles ranging from balloons, 
+									chairs and even a giant inflatable dinosaur! 
+								</p>
+							</br>
+							<h3 id="Headings">Our Office</h3>
+								<p id="Paras">
+									Situated in Limerick city centre or office is made completely out of rubber and fully inflated. 
+									Showing or commitment to truly being inflatable everything. 
+									During the floods of 2009 we featured in papers nation wide as we floated down the river shannon.
+								</p>
+							<br>
+							<h3 id="Headings">Our Staff</h3>
+								<p id="Paras">
+									Artem Semenov - ID: 15164748 (Group Leader)<br>
+									Brian Dooley - ID: 15123529<br>
+									James Gillatt-Haughton - ID: 1517776<br>
+									Steven Fitzgerald: - ID: 15184234<br>
+									
+								</p>
+
+							<h3 id="Headings">Opening Hours</h3>
+								<br>
+								<table id="Tables">
+								<tr>
+									<th>Monday</th>
+									<th>Tuesday</th>
+									<th>Wednesday</th>
+									<th>Thursday</th>
+									<th>Friday</th>
+									<th>Saturday</th>
+									<th>Sunday</th>
+								</tr>
+								<tr>
+									<td>9AM-5PM</td>
+									<td>9AM-5PM</td>
+									<td>9AM-5PM</td>
+									<td>9AM-5PM</td>
+									<td>9AM-5PM</td>
+									<td>10AM-3PM</td>
+									<td>CLOSED</td>
+								</tr>
+							</table>
+								<br>
+							<video id="vid" controls>
+								<source src="../Inflatable.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+							</video>
+						</DIV>
+						<!-- *******************************************************************END OF ALL OF YOUR STUFF IN SEPERATE DIVs HERE ************************************************************************************************** -->
+						
+					</DIV>
+				</DIV>
+			</DIV>
+			
+			<DIV class="Footer">
+					Copyright &copy Inflatable Everything 1968-2015
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>

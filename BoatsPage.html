@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<HTML>
+
+	<LINK rel="stylesheet" href="MainCSS.css">
+	<TITLE>Our Boats</TITLE>
+
+	<BODY>
+		<DIV id="Main-Grid">
+			<DIV class="Header">
+				<DIV ID="Welcome">
+					Welcome to our site! We inflate Everything, even your ego!
+				</DIV>
+				
+				<DIV id="login_options">
+					<form id="login_form">
+						Username: <input id="Login-Box" type="text" name="userName" placeholder="Username">
+						Password: <input id="Login-Box" type="text" name="userWord" placeholder="Password"> 
+						<button id="Login-Button" type="button" onclick="showError()">Login</button>
+					</form>
+			
+					<script>
+					function showError() {
+						window.alert("An error occured.\nServer is currently unavailable.")
+					}
+					</script>
+				</DIV>
+			</DIV>
+			
+			<DIV>
+				<IMG id="Banner" alt="Inflatable Everything Banner" src="../Website-Banner.jpg"></IMG>
+			</DIV>
+			
+			<DIV class="Left-Panel"></DIV>
+			<DIV class="Right-Panel"></DIV>
+			
+			<DIV class="Main-Body">
+				<DIV id="Body-Grid">
+					<DIV class="Main-Left-Panel"></DIV>
+					<DIV class="Main-Right-Panel"></DIV>
+					<DIV class="Main-Main-Body">
+						<DIV id="menu_bar">
+							<NAV>
+								<UL>
+									<LI><A id="menu_bar_dropdown" href="Default.html">Home</A></LI>
+				
+									<LI><A id="menu_bar_dropdown" href="#">Inflatables</A>
+										<UL>
+											<LI><A href="CastlePage.html">Castles</A></LI>
+											<LI><A href="SlidePage.html">Slides</A></LI>
+										</UL>
+									</LI>
+				
+									<LI><A id="menu_bar_dropdown" href="#">Water Gear</A>
+										<UL>
+											<LI><A href="BoatsPage.html">Boats</A></LI>
+											<LI><A href="JacketsPage.html">Life Jackets</A></LI>
+										</UL>
+									</LI>
+				
+									<LI><A id="menu_bar_dropdown" href="AboutUs.html">About Us</A></LI>
+				
+									<LI><A id="menu_bar_dropdown" href="FAQ.html">FAQ</A></LI>
+									
+								</UL>
+							</NAV>
+						</DIV>
+						
+						<DIV class="Image-Preview">
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../surf-inflatables.png" />
+							</FIGURE> 
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../slide-inflatables.png" />
+							</FIGURE>
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../pirate-inflatables.jpg" />
+							</FIGURE>
+							<FIGURE>
+								<IMG id="Slideshow" alt="Inflatable Everything Slide Show" src="../Course-inflatables.jpg" />
+							</FIGURE>
+						</DIV>
+						
+<!-- ************************************************************************ALL OF YOUR STUFF IN SEPERATE DIVs HERE ************************************************************************************************** -->
+							<div class="container">
+								<h1>Customer Testimonials.</h1>
+								<div class="testimonial">
+								<p>"Very happy with the boat I bought from Inflatable Everything. 
+								</br>Delivered in less than a week and had it out on the water last weekend."</br>--Jack O'Neill.</p></div>
+								<img src="../Speech Bubble.png" alt="Speech Bubble" style= width:100%; height:100%;></img>
+							</div>
+
+
+
+							<table>
+								<tr>
+									<th style= width:20%;><b>Product</b></th>
+									<th><b>Description</b></th>
+									<th><b>Price</b></th>
+								</tr>
+								<tr>
+									<td><img src="../Boat 1.png" alt="Boat 1." style= width:100% height:100%;></td>
+									<td> <b>4-Person Dinghy.</b></br></br>This 4-seater dinghy is great fun at the beach.
+									</br>It is also available in a 2-person or 1-person model at a affordable prices.</br> (Oars Sold Seperately.) </td>
+									<td>&#8364 79.99</td> <!-- Or &euro -->
+								</tr>
+								<tr>
+									<td> <img src="../Boat 2.png" alt="Boat 2." style= width:100% height:100%;></td>
+									<td> <b>Compact Sports Dinghy.</b></br>Easy to inflate and get going, this dinghy is a great first time purchase for people
+									</br>interested in getting into water sports.</br> (Oars Included.)</td>
+									<td>&#8364 49.99</td>
+								</tr>
+								<tr>
+									<td> <img src="../Boat 3.png" alt="Boat 3." style= width:100% height:100%;></td>
+									<td> <b>Compact Sports Dinghy (Essentials included.).</b></br>Much like the model above, this boat can hold up to 2 people
+									and also includes a motor, 1 pair of oars and a motorised pump for the boat.</br></td>
+									<td> &#8364 125</td>
+								</tr>
+							</table>	
+	
+<!-- *******************************************************************END OF ALL OF YOUR STUFF IN SEPERATE DIVs HERE ************************************************************************************************** -->	
+					</DIV>
+				</DIV>
+			</DIV>
+			
+			<DIV class="Footer">
+					Copyright &copy Inflatable Everything 1968-2015
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>
